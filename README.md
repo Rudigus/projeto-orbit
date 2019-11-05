@@ -1,1 +1,1 @@
-﻿Orbit é um projeto que visa ajudar alunos do Ensino Médio e Ensino Fundamental com a resolução de equações, esboço de gráficos, entre outros.
+﻿Orbit é um projeto que visa ajudar alunos do Ensino Médio e do Ensino Fundamental com a resolução de equações, com o esboço de gráficos, entre outros.
