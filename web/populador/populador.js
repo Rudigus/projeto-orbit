@@ -12,6 +12,6 @@ ok.onclick = function printar() {
       return resultado;
     }
   };
-  var resultado = cabecalho.elaborarResolucao();
+  var resultado = cabecalho.elaborarResolucao(equacao);
   console.log(resultado);
 };
