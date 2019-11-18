@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Orbit - Página Inicial</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+    <script type="text/javascript" src="scripts/botoes.js" defer></script>
   </head>
   <body>
     <header>
@@ -31,15 +33,15 @@
       </nav>
     </header>
     <br>
-    <div class="botoesAuxiliares">
-      <button type="button" name="button">raiz de x</button>
-      <button type="button" name="button">x<sup>2</sup></button>
-      <button type="button" name="button">x/y</button>
-      <button type="button" name="button">sin</button>
-      <button type="button" name="button">cos</button>
+    <div id="botoesAuxiliares">
+      <button class="botaoAuxiliar" id="radiciacao" type="button" name="button" lang="latex">\sqrt{x}</button>
+      <button class="botaoAuxiliar" id="potenciacao" type="button" name="button" lang="latex">x^2</button>
+      <button class="botaoAuxiliar" id="divisao" type="button" name="button" lang="latex">x/y</button>
+      <button class="botaoAuxiliar" id="seno" type="button" name="button" lang="latex">\sin</button>
+      <button class="botaoAuxiliar" id="cosseno" type="button" name="button" lang="latex">\cos</button>
     </div>
     <br>
-    <input type="text" name="" value=""> = <input type="text" name="" value="">
+    <input class="inputCalculadora" type="text" name="" value=""> = <input class="inputCalculadora" type="text" name="" value="">
     <br><br>
     <div class="formula">
       Fórmula: <br>
