@@ -10,7 +10,6 @@ for(i = 0; i < inputsCalculadora.length; i++)
 }
 for(i = 0; i < botoesAuxiliares.length; i++)
 {
-  console.log(botoesAuxiliares[i]);
   let botaoAtual = botoesAuxiliares[i];
   botaoAtual.addEventListener("click", function(){
     if(ultimoInput === inputsCalculadora[0])
