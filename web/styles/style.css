@@ -1,0 +1,88 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+a1 {
+  text-decoration: none;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gentium Basic', serif;
+}
+
+h1 {
+  font-size: 2rem;
+  display:inline;
+  margin: 0 20px;
+}
+
+.navlinks {
+  font-size: 2rem;
+  margin: 1.5%;
+}
+
+button {
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0px;
+}
+
+button:hover {
+  background-color: #bfbfbf;
+}
+
+button:active {
+  background-color: #a6a6a6;
+}
+
+.nav-dropcontent {
+  display: inline
+}
+
+.nav-dropcontent button {
+  display: none;
+}
+
+/*
+.nav-dropbtn:hover + .nav-dropcontent button, .nav-dropcontent:hover {
+  display: block;
+}
+*/
+
+input {
+  padding: 5px;
+}
+
+.nav-bar {
+  margin:50px;
+}
+
+.parte-inferior {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/*
+.formula, .exemplos, .resolucao {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
+*/
+
+.titulo-secao{
+  margin: 50px 0 0;
+}
+
+.botao-auxiliar {
+  font-family: arial;
+}
