@@ -4,9 +4,16 @@ body {
   text-align: center;
 }
 
-a1 {
+.a0 {
   text-decoration: none;
+  font-size:4rem;
+  color:darkblue; 
+  margin-right:10em;
+}
 
+.a1 {
+  color: black;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +30,6 @@ h1 {
   font-size: 2rem;
   margin: 1.5%;
 }
-
 button {
   background-color: #d9d9d9;
   border: 1px solid black;
@@ -33,6 +39,11 @@ button {
   text-decoration: none;
   font-size: 16px;
   margin: 0px;
+}
+
+.botaoAuxiliar {
+  width: 60px;
+  height: 40px;
 }
 
 button:hover {
@@ -84,5 +95,9 @@ input {
 }
 
 .botao-auxiliar {
-  font-family: arial;
+  font-family: Arial, sans-serif;
+}
+
+.sqrt-variable {
+  border-top: 0.5px solid black;
 }
