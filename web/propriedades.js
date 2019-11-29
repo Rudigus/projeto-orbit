@@ -1,34 +1,5 @@
-    var associativa = httpGetAsync('https://first-6a712.firebaseio.com/propriedades/asssociativa.json', console.log);
-
-  const preObjeto = document.getElementById('objeto')
-
-  const refObjeto = firebase.database().ref().child('propriedades') 
-
-  const ulPropriedades = document.getElementById('propriedades')
-
-  const refPropriedades = firebase.database().ref().child('propriedades')
-
-  refObjeto.on('value', snap =>{
-      preObjeto.innerText = JSON.stringify(snap.val(), null , 1 )
-  } )
-
-  refPropriedades.on('child_added', snap=>{
-      const li = document.createElement('li')
-      var ok = snap.val();
-      li.innerText = snap.val()
-      ulPropriedades.appendChild(li)
-
-  })
-
-  refPropriedades.on('child_changed', snap=>{
-      const liChanged = document.getElementById(snap.key)
-      liChanged.innerText = snap.val()
-  })
-
-  refPropriedades.on('child_removed', snap=>{
-    const liRemove = document.getElementById(snap.key)
-    liRemove.remove()
-})
+//Está sendo pego no banco de dados o valor que está armazenado no local indicado, e guradando em uma variavel 
+var associativa = httpGetAsync('https://first-6a712.firebaseio.com/propriedades/asssociativa.json', console.log);
 
 function httpGetAsync(theUrl, callback)
 {
