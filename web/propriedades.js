@@ -1,5 +1,5 @@
 //Está sendo pego no banco de dados o valor que está armazenado no local indicado, e guradando em uma variavel 
-var associativa = httpGetAsync('https://first-6a712.firebaseio.com/propriedades/asssociativa.json', console.log);
+var associativa = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/asssociativa.json', console.log);
 
 function httpGetAsync(theUrl, callback)
 {
