@@ -3,6 +3,7 @@ var associativa = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos
 var comutativa = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/comutativa.json', console.log);
 var elemento_nulo = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/elemento-nulo.json', console.log);
 var elemento_neutro = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/elemento-neutro.json', console.log);
+var distributiva = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/distributiva.json', console.log);
 
 
 function httpGetAsync(theUrl, callback)
