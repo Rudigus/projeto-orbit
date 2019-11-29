@@ -1,5 +1,9 @@
 //Está sendo pego no banco de dados o valor que está armazenado no local indicado, e guradando em uma variavel 
 var associativa = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/asssociativa.json', console.log);
+var comutativa = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/comutativa.json', console.log);
+var elemento_nulo = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/elemento-nulo.json', console.log);
+var elemento_neutro = httpGetAsync('https://projeto-orbit.firebaseio.com/cabeçalhos/cabeçalho_02/propriedades/elemento-neutro.json', console.log);
+
 
 function httpGetAsync(theUrl, callback)
 {
