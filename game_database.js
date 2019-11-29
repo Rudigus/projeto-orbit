@@ -1,6 +1,10 @@
 const game_database = {};
 
 
+/*
+Esse tutorial do Real Time Database, é uma especie de jogo da velha, mas que é apenas nomeando as posições 'boards' com X ou O no console.
+podendo modificar no proprio banco de dados e podendo remover jogos gravados pelo console, e até mesmo verificar mudanças pelo console.
+*/
 let game_id = false;
 
 function new_game(player1, board) {
@@ -9,13 +13,14 @@ function new_game(player1, board) {
         player1: player1,
         board: board,
         gameover: false,
+        //criando um 'new game' 
         createdat: firebase.database.ServerValue.TIMESTAMP,
     };
-    if (!game_id) {
+    if (!game_id) //Esse comando serve para que seja criado um ID não usado no 'child' games
         game_id = firebase.database().ref().child('games').push().key
     };
 
-    let updates = {};
+    let updates = {};//criando um objeto 
     updates['/games/' + game_id] = game_data;
 
     let game_ref = firebase.database().ref();
