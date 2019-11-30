@@ -4,17 +4,24 @@
     <meta charset="utf-8">
     <title>Orbit - Página Inicial</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
     <script type="text/javascript" src="scripts/inputCalculadora.js" defer></script>
+    <script type="text/javascript" src="scripts/database.js" defer></script>
+    <script type="text/javascript" src="scripts/cabecalho.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
-        <a class="navlinks" href="#">Orbit</a>
-        <a class="navlinks" href="graficos.html">Gráficos</a>
-        <a class="navlinks" href="propriedadesaritmeticas.html">Propriedades Aritméticas</a>
-        <a class="navlinks" href="formulas.html">Fórmulas</a>
+        <p>
+          <a class="a0" href="#">
+          <img border="0" alt="Orbit" src="button-icons/logoOrbit.svg">
+          </a>
+          </p>
+        <a class="a1 navlinks" href="graficos.html">Gráficos </a>
+        <a class="a1 navlinks" href="propriedadesaritmeticas.html">Propriedades Aritméticas </a>
+        <a class="a1 navlinks" href="formulas.html">Fórmulas </a>
         <br><br>
         <div class="nav-bar">
           <button class="nav-dropbtn">Matemática</button>
@@ -22,7 +29,7 @@
             <button type="button" name="button">Título de um dos objetos cabecalho cuja matéria possui o valor "Matemática"</button>
             <button type="button" name="button">Título de um dos objetos cabecalho cuja matéria possui o valor "Matemática"</button>
           </div>
-          <h1>Título de objeto cabecalho que foi selecionado pelo usuário</h1>
+          <h1 style="font-family: 'Montserrat';">Equação Quadrática</h1>
           <button class="nav-dropbtn">Física</button>
           <div class="nav-dropcontent">
             <button type="button" name="button">Título de um dos objetos cabecalho cuja matéria possui o valor "Física"</button>
@@ -32,54 +39,74 @@
     </header>
     <br>
     <div id="botoesAuxiliares">
-      <button class="botaoAuxiliar" id="radiciacao" type="button" name="button"><img src="https://latex.codecogs.com/gif.latex?\sqrt{x}" border="0" alt="\sqrt{x}"></button>
-      <button class="botaoAuxiliar" id="potenciacao" type="button" name="button"><img src="https://latex.codecogs.com/gif.latex?x^2" border="0" alt="x^2"></button>
-      <button class="botaoAuxiliar" id="divisao" type="button" name="button"><img src="https://latex.codecogs.com/gif.latex?x/y" border="0" alt="x/y"></button>
-      <button class="botaoAuxiliar" id="seno" type="button" name="button"><img src="https://latex.codecogs.com/gif.latex?\sin%20x" border="0" alt="sin x"></button>
-      <button class="botaoAuxiliar" id="cosseno" type="button" name="button"><img src="https://latex.codecogs.com/gif.latex?\cos%20x" border="0" alt="cos x"></button>
+      <button class="botaoAuxiliar" id="radiciacao" type="button" name="button"> 
+        <img src="button-icons/raizEnesima.svg" 
+         /> 
+      </button>
+      <button class="botaoAuxiliar" id="potenciacao" type="button" name="button" >
+        <img src="button-icons/xAoEnesimo.svg" 
+        /> 
+      </button>
+      <button class="botaoAuxiliar" id="divisao" type="button" name="button" >
+        <img src="button-icons/fracao.svg" 
+        
+        /> </button>  
+      <button class="botaoAuxiliar" id="seno" type="button" name="button" >
+        <img src="button-icons/seno.svg" 
+        
+        /> </button>
+      <button class="botaoAuxiliar" id="cosseno" type="button" name="button" >
+        <img src="button-icons/cosseno.svg" 
+      
+        /> </button>
     </div>
     <br>
     <input class="inputCalculadora" type="text" name="" value=""> = <input class="inputCalculadora" type="text" name="" value="">
-    <br><br>
-    <div class="parte-inferior">
+    <br><br> 
+    <div class="parte-esquerda">
       <!--<div class="formula">-->
-        <p class="titulo-secao">
-          Fórmula:
+        <p>
+            &nbsp; &nbsp; Fórmula:
         </p>
         <p>
-          Propriedade "formula" do objeto cabecalho selecionado
+          <ul>
+            <li>ax^2 + bx + c = 0</li>
+            <li>x = {-b +- √b^2 -4ac} / {2a}</li>
+          </ul>
         </p>
+    </div>  
       <!--</div>
       <br>
       <div class="exemplos">-->
-        <p class="titulo-secao">
-          Exemplos:
+    <div class="parte-direita">    
+        <p> 
+            &nbsp; &nbsp; Exemplos:
         </p>
         <p>
-          Propriedade "exemplos" do objeto cabecalho selecionado
+          <ul id="exemplos">
+            <li>x^2 - 3x + 10 = 0</li>
+            <li>9x^2 - 12x + 4 = 0</li>
+            <li>4x^2 - 4x + 1 = 0</li>
+          </ul>
+          
         </p>
-      <!--</div>
-      <br>
-      <div class="resolucao">-->
-        <p class="titulo-secao">
-          1º Passo:
-        </p>
-        <p>
-          1º elemento da propriedade "passos" do objeto cabecalho selecionado
-        </p>
-        <p class="titulo-secao">
-          nº Passo:
-        </p>
-        <p>
-          nº elemento da propriedade "passos" do objeto cabecalho selecionado
-        </p>
-        <p class="titulo-secao">
-          Resultado:
-        </p>
-        <p>
-          Propridade "resultado" do objeto cabecalho selecionado
-        </p>
-      <!--</div>-->
+    </div>
+    <div class="resultados">
+      <p>
+          &nbsp; &nbsp; Solução:
+      </p>
+      <p>
+        <ol type="I">
+          <li>Passo 1</li>
+          <li>Passo 2</li>
+          <li>Passo N</li>
+        </ol>
+      </p>
+
+      <p>
+          &nbsp; &nbsp; Resultado(s):
+      </p>
+       
     </div>
   </body>
 </html>
