@@ -4,13 +4,17 @@ body {
   text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: #cc00cc;
+.a0 {
+  margin-left:15em;
+  float: left;
+  width: 30px;
+  height: 30px;
+
 }
 
-a {
-  color: #660066;
+.a1 {
+  color: black;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,11 +29,10 @@ h1 {
 
 .navlinks {
   font-size: 2rem;
-  margin: 5%;
+  margin: 1.5%;
 }
-
 button {
-  background-color: #d9d9d9;
+  background-color: rgb(0, 0, 100,0.2);
   border: 1px solid black;
   color: black;
   padding: 10px 15px;
@@ -39,12 +42,17 @@ button {
   margin: 0px;
 }
 
+.botaoAuxiliar {
+  width: 90px;
+  height: 60px;
+}
+
 button:hover {
-  background-color: #bfbfbf;
+  background-color: rgb(0, 0, 100,0.3);
 }
 
 button:active {
-  background-color: #a6a6a6;
+  background-color: rgb(0, 0, 100,0.5);
 }
 
 .nav-dropcontent {
@@ -63,15 +71,47 @@ button:active {
 
 input {
   padding: 5px;
+  padding-left: 138px;
+  padding-right: 138px;
+  font-size:14pt;
 }
 
 .nav-bar {
-  margin:50px;
+  margin:20px;
 }
 
-.parte-inferior {
-  display: inline-block;
-  margin: 0 auto;
+.parte-esquerda {
+  position:absolute;
+  font-family: "Times New Roman", Courier, Garamond, serif;
+	width: 500px;
+  min-height: 200px;
+	background-color: rgb(0, 0, 100,0.2);
+	height: auto;
+  margin-left: 27.7em; 
+  text-align: left;
+}
+
+/* background-color: #eee;*/
+.parte-direita {
+  position:absolute;
+  font-family: "Times New Roman", Courier, Garamond, serif;
+	width: 500px;
+  min-height: 200px;
+	background-color: rgb(0, 0, 100,0.2);
+	height: auto;
+  margin-left: 60.2em; 
+  text-align: left;
+}
+
+.resultados{
+  position:absolute;
+  font-family: "Times New Roman", Courier, Garamond, serif;
+	width: 1021px;
+	min-height: 200px;
+	background-color: rgb(0, 0, 100,0.2);
+	height: auto;
+  margin-top: 14em;
+  margin-left: 27.7em; 
   text-align: left;
 }
 
@@ -82,11 +122,15 @@ input {
   text-align: left;
 }
 */
-
+/*
 .titulo-secao{
   margin: 50px 0 0;
 }
-
+*/
 .botao-auxiliar {
-  font-family: arial;
+  font-family: Arial, sans-serif;
+}
+
+.sqrt-variable {
+  border-top: 0.5px solid black;
 }
