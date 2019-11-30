@@ -71,6 +71,7 @@ button:active {
 
 input {
   padding: 5px;
+
   padding-left: 138px;
   padding-right: 138px;
   font-size:14pt;
@@ -114,7 +115,6 @@ input {
   margin-left: 27.7em; 
   text-align: left;
 }
-
 
 /*
 .formula, .exemplos, .resolucao {
