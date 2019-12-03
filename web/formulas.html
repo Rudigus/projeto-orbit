@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Orbit - Fórmulas</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+    <script type="text/javascript" src="scripts/inputCalculadora.js" defer></script>
+    <script type="text/javascript" src="scripts/database.js" defer></script>
+    <script type="text/javascript" src="scripts/cabecalho.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>
+            <a class="a0" href="paginainicial.html">
+          <img border="0" alt="Orbit" src="button-icons/logoOrbit000.svg">
+          </a>
+          </p>
+        <a class="a1 navlinks" href="graficos.html">Gráficos </a>
+        <a class="a1 navlinks" href="propriedadesaritmeticas.html">Propriedades Aritméticas </a>
+        <a class="a1 navlinks" style="color: darkblue;" href="formulas.html">Fórmulas </a>
+        <br><br>
+        <div class="nav-bar">
+          <button class="nav-dropbtn" onclick="minimizarMat()">Matemática</button>
+          <script>
+              function minimizarMat() {
+                document.getElementById("caixa").innerHTML = "";
+              }
+            </script>
+          <h1 style="font-family: 'Montserrat';">Fórmulas de Matemática</h1>
+          <button class ="nav-dropbtn" onclick="minimizarFis()">Física</button>
+    <script>
+      function minimizarFis() {
+        document.getElementById("caixa2").innerHTML = "";
+      }
+    </script>
+
+      </nav>
+    </header>
+    <br><br>
+    <div id="caixa" class="caixa-formulas">
+      <!--<div class="formula">-->
+        <p>
+            &nbsp; &nbsp; Equação Quadrática:
+        </p>
+        <p>
+          <ul>
+            <li>ax^2 + bx + c = 0</li>
+            <li>x = {-b +- √b^2 -4ac} / {2a}</li>
+          </ul>
+        </p>
+        <p>
+          &nbsp; &nbsp; Teorema de Pitágoras:
+      </p>
+      <p>
+        <ul>
+          <li>a^2 = b^2 + c^2</li>
+        </ul>
+      </p>
+      <p>
+        &nbsp; &nbsp; Volume do Cone:
+    </p>
+    <p>
+      <ul>
+        <li>V = {3.14 . r^2 . h} / {3} </li>
+      </ul>
+    </p>
+    
+    </div>  
+
+    <div id="caixa2" class="caixa-formulas2">
+        <!--<div class="formula">-->
+          <p>
+              &nbsp; &nbsp; Movimento Uniforme:
+          </p>
+          <p>
+            <ul>
+              <li>S = So + V . Dt</li>
+              <li>Vm = {DS} / {Dt}</li>
+            </ul>
+          </p>
+
+          <p>
+              &nbsp; &nbsp; Movimento Uniformemente Variado:
+          </p>
+          <p>
+            <ul>
+              <li>V = Vo + A . Dt</li>
+              <li>Am = {DV} / {Dt}</li>
+              <li>S = So + Vo . t + {A . t^2} / {2}</li>
+            </ul>
+          </p>
+
+      </div>  
+  </body>
+</html>
