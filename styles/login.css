@@ -32,6 +32,5 @@ transition: all 0.4s ease 0s;
 .button:hover {
 color: #ffffff;
 background: #50C878;
-border-color: #50C878;
 transition: all 0.4s ease 0s;
 }
