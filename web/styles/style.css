@@ -29,17 +29,24 @@ body {
 }
 
 .active, .collapsible:hover {
-  background-color: rgb(0, 0, 100,0.3);
+  background-color: rgb(0, 0, 100,0.4);
 }
-/*
+
 .active:after {
-   content: "\2796";  Unicode para menos (-) 
+  background-color: rgb(0, 0, 100,0.3); /* isso era pra mudar com o clique do botao, mas com o collapsible aparentemente ele ignora esse comando.*/
+
+   /* content: "\2796";  Unicode para menos (-) */
 }
-*/
+
 .content {
   display: inline-block;
-  padding: 0 0px;
-  background-color: rgb(0, 0, 100,0.3);
+  width: 200px;
+  position:absolute;
+  top: 17.5%;
+  margin-left: -11em;
+
+  
+  background-color: rgb(255, 255, 255,1);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -158,7 +165,8 @@ input {
   text-align: left;
 }
 
-.caixa-formulas {
+.caixa-formulasMat{
+  
   position:absolute;
   font-family: "Times New Roman", Courier, Garamond, serif;
 	width: 1021px;
@@ -169,17 +177,18 @@ input {
   text-align: left;
 }
 
-.caixa-formulas2 {
+.caixa-formulasFis {
+  /*  display: none;   */
+  display: none;
   position:absolute;
   font-family: "Times New Roman", Courier, Garamond, serif;
 	width: 1021px;
   min-height: 200px;
 	background-color: white;
 	height: auto;
-  margin-top: 17em; 
   margin-left: 27.7em; 
   text-align: left;
-}
+} 
 
 .caixa-props {
   position:absolute;

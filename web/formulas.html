@@ -21,27 +21,35 @@
           </p>
         <a class="a1 navlinks" href="graficos.html">Gráficos </a>
         <a class="a1 navlinks" href="propriedadesaritmeticas.html">Propriedades Aritméticas </a>
-        <a class="a1 navlinks" style="color: rgb(0, 0, 110);" href="formulas.html">Fórmulas </a>
+        <a class="a1 navlinks" style="color: rgb(0, 0, 85);" href="formulas.html">Fórmulas </a>
         <br><br>
         <div class="nav-bar">
-          <button class="nav-dropbtn" onclick="minimizarMat()">Matemática</button>
+          <button  onclick="exibirMat()">Matemática</button>
           <script>
-              function minimizarMat() {
-                document.getElementById("caixa").innerHTML = "";
+              function exibirMat() {
+                var formulasMat = document.getElementById("caixaMat");
+                var formulasFis = document.getElementById("caixaFis");
+                  formulasMat.style.display = "block";
+                  formulasFis.style.display = "none";
+            
               }
             </script>
           <h1 style="font-family: 'Montserrat';">Fórmulas de Matemática</h1>
-          <button class ="nav-dropbtn" onclick="minimizarFis()">Física</button>
+          <button  onclick="exibirFis()">Física</button>
     <script>
-      function minimizarFis() {
-        document.getElementById("caixa2").innerHTML = "";
+      function exibirFis() {
+        var formulasFis = document.getElementById("caixaFis");
+        var formulasMat = document.getElementById("caixaMat");
+           formulasFis.style.display = "block";
+           formulasMat.style.display = "none";
+                   
       }
     </script>
 
       </nav>
     </header>
     <br><br>
-    <div id="caixa" class="caixa-formulas">
+    <div id="caixaMat" class="caixa-formulasMat">
       <!--<div class="formula">-->
         <p>
             &nbsp; &nbsp; Equação Quadrática:
@@ -71,7 +79,7 @@
     
     </div>  
 
-    <div id="caixa2" class="caixa-formulas2">
+    <div id="caixaFis" class="caixa-formulasFis">
         <!--<div class="formula">-->
           <p>
               &nbsp; &nbsp; Movimento Uniforme:
