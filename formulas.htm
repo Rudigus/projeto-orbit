@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulas</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        div#função {
+            width: 300px;
+            line-height: 300px;
+            text-align: center;
+            font: normal 14pt Lucidas Sans;
+        }
+    </style>
+    <style>
+        div#PA {
+            width: 300px;
+            line-height: 400px;
+            text-align: center;
+            font: normal 14pt Lucidas Sans;
+        }
+    </style>
+    <style>
+        div#PG {
+            width: 300px;
+            line-height: 500px;
+            text-align: center;
+            font: normal 14pt Lucidas Sans;
+        }
+    </style>
+    <style>
+        div#COS {
+            width: 300px;
+            line-height: 600px;
+            text-align: center;
+            font: normal 14pt Lucidas Sans;
+        }
+    </style>
+    <style>
+        div#SIN {
+            width: 300px;
+            line-height: 700px;
+            text-align: center;
+            font: normal 14pt Lucidas Sans;
+        }
+    </style>
+    <style>
+        div#TG {
+            width: 300px;
+            line-height: 800px;
+            text-align: center;
+            font: normal 14pt Lucidas Sans;
+        }
+    </style>
+    <style>
+        div#Combinatoria {
+            width: 300px;
+            line-height: 900px;
+            text-align: center;
+            font: normal 14pt Lucidas Sans;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="função">
+        <h1>Funções</h1> $$ ax^2+bx+C $$
+        <h4>Bhaskara</h4> $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+        <h4>Vértice da parábola</h4> $$ X_v = {-b\over 2a} $$ $$ Y_v = {-\Delta\over 4a} $$
+
+    </div>
+    <div id="PA">
+        <h1>PA</h1> $$ a_n = a_1 + (n - 1) \cdot R $$
+        <h4>Razão</h4> $$ r = {a_n - a_1 \over n - 1} $$
+        <h4>Soma dos termos da PA</h4> $$ S_n = {n \cdot (a_1 + a_n) \over 2 } $$
+        <h4>Termo central da PA</h4> $$ TM = {a_1 + a_n \over 2 } $$
+    </div>
+    <div id="PG">
+        <h1>PG</h1> $$ a_n = a_1 \cdot q^{n - 1} $$
+        <h4>Razão</h4> $$ q = {a_{n+1} \over a_n}$$
+        <h4>Soma dos termos da PG</h4> $$ S_n = {a_1\cdot (q^n-1)\over q-1} $$
+    </div>
+    <div id="COS">
+        <h1>Cosseno</h1> $$ cos = {cateto\ adjacente\over hipotenusa} $$
+        <h4>cos da soma enre os arcos</h4> $$ cos(a+b) = cos(a)\cdot cos(b) - sen(a)\cdot sen(b) $$
+        <h4>cos da diferença entre os arcos</h4> $$ cos(a-b) = cos(a)\cdot cos(b) + sen(a)\cdot sen(b) $$
+        <h4>Arco duplo do cos</h4> $$ cos(2a) = cos^2(a) - sen^2(a) $$
+    </div>
+    <div id="SIN">
+        <h1>Seno</h1> $$ sen = {cateto\ oposto\over hipotenusa} $$
+        <h4>sen da soma entre os arcos</h4> $$ sen(a+b) = sen(a)\cdot cos(b) + sen(b)\cdot cos(a) $$
+        <h4>sen da diferença entre os arcos</h4> $$ sen(a-b) = sen(a)\cdot cos(b) - sen(b)\cdot cos(a) $$
+        <h4>Arco duplo do sen</h4> $$ sen(2a) = 2\cdot sen(a)\cdot cos(a) $$
+    </div>
+    <div id="TG">
+        <h1>Tangente</h1> $$ tg = {cateto\ oposto\over cateto\ adjacente} = {sen\over cos} $$
+        <h4>tg da soma entre os arcos</h4> $$ tg(a+b) = {tg(a) + tg(b) \over 1 – tg(a) \cdot tg(b)} $$
+        <h4>tg da diferença entre os arcos</h4> $$ tg(a-b) = {tg(a) - tg(b) \over 1 + tg(a) \cdot tg(b)} $$
+        <h4>Arco duplo da tg</h4> $$ {2tg(a)\over 1-tg^2(a)} $$
+    </div>
+    <div id="Combinatoria">
+        <h1>Analise combinatoria</h1>
+        <h4>Permutação simples</h4> $$ P_n = n! $$
+        <h4>Arranjo simples</h4> $$ A_{n,p} = {n!\over (n-p)!} $$
+        <h4>Combinação simples</h4> $$ C{n,p} = {n \choose k} = {n!\over p!(n-p)!} $$
+    </div>
+</body>
+
+</html>
