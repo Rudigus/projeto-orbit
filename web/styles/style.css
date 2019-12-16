@@ -125,6 +125,15 @@ input {
   font-size:14pt;
 }
 
+/*
+input {
+  padding: 5px;
+  padding-left: 400px;
+  padding-right: 400px;
+  font-size:14pt;
+}
+*/
+
 .nav-bar {
   margin:50px;
 }
