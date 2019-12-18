@@ -1,6 +1,12 @@
 html {
   font-family: 'Exo 2', sans-serif;
 }
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  text-align: center;
+  background-color: #DDDDDD;
+}
 
 .container {
   text-align: center;
@@ -9,7 +15,9 @@ html {
 
 .div-login {
   display: inline-block;
+  
 }
+
 
 .inputEmail, .inputSenha {
   display: block;
