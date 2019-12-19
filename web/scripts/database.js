@@ -1,18 +1,14 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCokj3glVteUwc7ef3J5pfQ_LWSrYoYTMs",
-    authDomain: "first-6a712.firebaseapp.com",
-    databaseURL: "https://first-6a712.firebaseio.com",
-    projectId: "first-6a712",
-    storageBucket: "first-6a712.appspot.com",
-    messagingSenderId: "20367018934",
-    appId: "1:20367018934:web:536ade171ce2bcc3584f17",
-    measurementId: "G-4GB0TQSV9K"
+    apiKey: "AIzaSyANUh9skFhQZ1aiiex5JtjPKXLI_F2_DBs",
+    authDomain: "projeto-orbit.firebaseapp.com",
+    databaseURL: "https://projeto-orbit.firebaseio.com",
+    projectId: "projeto-orbit",
+    storageBucket: "projeto-orbit.appspot.com",
+    messagingSenderId: "356355277016",
+    appId: "1:356355277016:web:c1deb094c54b86e66a57ad",
+    measurementId: "G-FGWXQD68CS"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   //firebase.analytics();
-
-
-
-  
