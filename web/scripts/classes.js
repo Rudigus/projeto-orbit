@@ -1,4 +1,4 @@
-
+console.log("eita");
 //Classe Monomio, base de todo o processo de análise.
 class Monomio {
     constructor(_coeficiente = 1  ,_incognitas = [],_expoenteIncognitas = []){

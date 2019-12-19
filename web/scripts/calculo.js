@@ -1,3 +1,5 @@
+console.log("oi");
+
 var truee = false;
 var botaoCalcular = document.getElementById("botaoCalcular");
 var botaoCalcular2 = document.getElementById("botaoCalcular2");
@@ -151,11 +153,9 @@ class obterInformaçesMonomio {
 	}
   }
 }
-if (botaoCalcular1 == botaoCalcular1){
 botaoCalcular1.onclick = function printar1() {
   numerodeGraficos = 2;
   botaoCalcular.click();
-}
 }
 botaoCalcular.onclick = function printar() {
   var n = 0;
