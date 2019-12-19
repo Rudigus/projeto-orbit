@@ -58,7 +58,7 @@
             "expoente": 1,
             "incognita": {
               "posicaoInicial": "S0",
-              "variacaoTempo": "deltaTempo",
+              "variacaoTempo": "T",
               "velocidade": "v"
             }
           },
