@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>Orbit - Página Inicial</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
   <script type="text/javascript" src="scripts/inputCalculadora.js" defer></script>
   <script type="text/javascript" src="scripts/database.js" defer></script>
   <script type="text/javascript" src="scripts/cabecalho.js" defer></script>
@@ -14,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:700&display=swap" rel="stylesheet">
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script type="text/javascript" src="scripts/classes.js" defer></script>
   <script type="text/javascript" src="scripts/calculo.js" defer></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
@@ -28,29 +28,54 @@
             <img border="0" alt="Orbit" src="button-icons/logoOrbit01.svg">
           </a>
         </p>
-        <br> 
+        <br>
         <a class="a1 navlinks" href="graficos.html">Gráficos </a>
         <a class="a1 navlinks" href="propriedadesaritmeticas.html">Propriedades Aritméticas </a>
         <a class="a1 navlinks" href="formulas.html">Fórmulas </a>
         <a class="a1 navlinks" href="login.html">Login</a>
       </nav>
     </header>
-
+  
     <main>
       <div class="nav-bar">
         <button class="collapsible">Matemática</button>
         <div class="content">
-          <p>Equação Quadrática</p>
-          <p>Volume do Cone</p>
+          <button class="btn" onclick="exibirMat()">Equação Quadrática</button>
+          <script>
+              function exibirMat() {
+                var formulas = document.getElementById("formulaEquacaoQuadrada");
+                var exemplos = document.getElementById("exemplosEquacaoQuadrada");
+                var formulas2 = document.getElementById("formulaMU");
+                var exemplos2 = document.getElementById("exemplosMU");
+                  formulas.style.display = "block";
+                  exemplos.style.display = "block";
+                  formulas2.style.display = "none";
+                  exemplos2.style.display = "none";
+
+              }
+            </script>
+      
         </div>
 
         <h1 style="font-family: 'Montserrat';">Equação Quadrática</h1>
         <button class="collapsible">Física</button>
         <div class="content">
-          <p>Termometria</p>
-          <p>MUV</p>
+          <button class="btn" onclick="exibirFis()">Movimento Uniforme</button>
+          <script>
+              function exibirFis() {
+                var formulas = document.getElementById("formulaMU");
+                var exemplos = document.getElementById("exemplosMU");
+                var formulas2 = document.getElementById("formulaEquacaoQuadrada");
+                var exemplos2 = document.getElementById("exemplosEquacaoQuadrada");
+                  formulas.style.display = "block";
+                  exemplos.style.display = "block";
+                  formulas2.style.display = "none";
+                  exemplos2.style.display = "none";
+
+              }
+            </script>
         </div>
-        <br><br> <br> 
+        <br><br> <br>
         <div id="botoesAuxiliares">
           <button class="botaoAuxiliar" id="radiciacao" type="button" name="button">
             <img src="button-icons/raizEnesima.svg" />
@@ -65,12 +90,13 @@
           <button class="botaoAuxiliar" id="cosseno" type="button" name="button">
             <img src="button-icons/cosseno.svg" /> </button>
         </div>
-        <br>
-        <input id="inputCalculadora" type="text" name="" value="">
-        <button id="botaoCalcular" type="button" name="button">Calcular</button>
-        <br><br>
-        <div class="parte-esquerda">
-          <!--<div class="formula">-->
+      </div>
+      <br>
+      <input id="inputCalculadora" type="text" name="" value="">
+      <button id="botaoCalcular" type="button" name="button">Calcular</button>
+      <br><br>
+      <div class="output">
+        <div id="formulaEquacaoQuadrada" class="parte-esquerda">
           <p>
             &nbsp; &nbsp; Fórmula:
           </p>
@@ -81,26 +107,62 @@
             </ul>
           </p>
         </div>
-        <!--</div>
-        <br>
-        <div class="exemplos">-->
-        <div class="parte-direita">
+        <div id="exemplosEquacaoQuadrada" class="parte-direita">
           <p>
             &nbsp; &nbsp; Exemplos:
           </p>
           <p>
             <ul id="exemplos">
-              
+              <li>x^2 - 3x + 10 = 0</li>
+              <li>9x^2 - 12x + 4 = 0</li>
+              <li>4x^2 - 4x + 1 = 0</li>
+            </ul>
+
+          </p>
+        </div>
+
+        <div id="formulaMU" class="parte-esquerda">
+          <p>
+            &nbsp; &nbsp; Fórmula:
+          </p>
+          <p>
+            <ul>
+              $$ ax^2+bx+c $$
+              $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+            </ul>
+          </p>
+        </div>
+        <div id="exemplosMU" class="parte-direita">
+          <p>
+            &nbsp; &nbsp; Exemplos:
+          </p>
+          <p>
+            <ul id="exemplos">
+              <li>exemplo de Mu</li>
+              <li>9x^2 - 12x + 4 = 0</li>
+              <li>4x^2 - 4x + 1 = 0</li>
             </ul>
 
           </p>
         </div>
         <div class="resultados">
+          <!-- <p>
+            &nbsp; &nbsp; Solução:
+          </p>
+          <p>
+            <ol type="I">
+              <li>Passo 1</li>
+              <li>Passo 2</li>
+              <li>Passo N</li>
+            </ol>
+          </p> -->
+
           <p>
             &nbsp; &nbsp; Resultado(s):
           </p>
+        </div>
+      </div>
     </main>
-  </div>
 </body>
 
 </html>
