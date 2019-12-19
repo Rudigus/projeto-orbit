@@ -1,4 +1,7 @@
+var truee = false;
 var botaoCalcular = document.getElementById("botaoCalcular");
+var botaoCalcular2 = document.getElementById("botaoCalcular2");
+var botaoCalcular1 = document.getElementById("botaoCalcular1");
 var inputCalculadora = document.getElementById("inputCalculadora");
 var exibidor = document.getElementById("exibidor");
 var listaMonomios = [];
@@ -11,6 +14,9 @@ var b1 = 0;
 var C = 0;
 var c1 = 0;
 var tr = true;
+var x = [];
+var y = [];
+var numerodeGraficos = 0;
 class obterInformaçesMonomio {
   construtor(polinomio) {
     this.polinomio = polinomio;
@@ -145,6 +151,12 @@ class obterInformaçesMonomio {
 	}
   }
 }
+if (botaoCalcular1 == botaoCalcular1){
+botaoCalcular1.onclick = function printar1() {
+  numerodeGraficos = 2;
+  botaoCalcular.click();
+}
+}
 botaoCalcular.onclick = function printar() {
   var n = 0;
   var informacoes = inputCalculadora.value;
@@ -157,7 +169,10 @@ botaoCalcular.onclick = function printar() {
   var iguais1;
   var iguais2 = [];
   var iguais3 = [];
+  var listaMonomioUnico = [];
+  var variav;
   n = informacoes.indexOf(",");
+  var dicionarioUnico = {};
   if (n != -1) {
     var alfabetin = "abcdefghijklmnopqrstuvwxyz";
     alfabetin.split();
@@ -174,7 +189,7 @@ botaoCalcular.onclick = function printar() {
     }
     n = 0;
   }
-  if (informacoes.indexOf(",") == -1) {
+  if (informacoes.indexOf(",") == -1 && informacoes.indexOf("=") != -1) {
     p = informacoes.indexOf("=");
     polinomioDireito = informacoes.substring(p + 1);
     if (p != -1) {
@@ -227,9 +242,43 @@ botaoCalcular.onclick = function printar() {
 	}
 	console.log(listaMonomiosEsquerdo[0]._Coeficiente);
 	console.log(A);
-	x = new Cabecalho();
-	console.log(x.aplicarValorParcial(listaMonomiosEsquerdo,listaMonomiosDireito,dicionario));
-  } else if (repete == false) {
+	p = new Cabecalho("","","",listaMonomiosEsquerdo,listaMonomiosDireito);
+	console.log(p.aplicarValorParcial(dicionario));
+}else if(informacoes.indexOf(",") == -1 && informacoes.indexOf("=") == -1){
+  truee = true;
+  n = 0;
+  var alfabeton = "abcdefghijklmnopqrstuvwxyz";
+  alfabeton = alfabeton.split("");
+  while(n < alfabeton.length){
+    if(informacoes.indexOf(alfabeton[n]) != -1){
+      variav = alfabeton[n];
+    n = 29;
+    }
+    n+=1;
+  }
+  n = informacoes.indexOf("-");
+  while (n != -1) {
+    // console.log(m);
+    // console.log(polinomioDireito);
+    informacoes = informacoes.substring(0, n) + "+" + informacoes.substring(n);
+    n = informacoes.indexOf("-", n + 2);
+  }
+  informacoes = informacoes.replace(/ /g, '').split("+");
+  console.log(informacoes);
+  n = -100;
+  tr = true;
+  var polinomioUnico = new obterInformaçesMonomio(informacoes);
+  listaMonomioUnico = polinomioUnico.ganharInformaçoes(informacoes,tr);
+  console.log(listaMonomioUnico);
+  p = new Cabecalho();
+  while(n<=100){
+    y[n+100] = n;
+    dicionarioUnico[variav] = y[n+100];
+    n+=1;
+    console.log(p.aplicarValorCompleto(listaMonomioUnico,dicionarioUnico));
+    x[n + 100] = p.aplicarValorCompleto(listaMonomioUnico,dicionarioUnico);
+  }
+}else if (repete == false) {
     var idi = 0;
     var u2 = 0;
     var u1 = 0;
@@ -355,10 +404,114 @@ botaoCalcular.onclick = function printar() {
     }
     console.log(dicionario);
     console.log(dicionarioInverso);
-	x = new Cabecalho();
+	p = new Cabecalho("","","",listaVerdadeira, listaVerdadeira1);
 	console.log(listaVerdadeira[0]);
-    console.log(x.aplicarValorParcial(listaVerdadeira, listaVerdadeira1, dicionario));
+    console.log(p.aplicarValorParcial(dicionario));
   }
-  var monomio10 = new Monomio()
+if(truee == true && numerodeGraficos == 0){
+  let myChart = document.getElementById('myChart').getContext('2d');
 
+  // Global Options
+  Chart.defaults.global.defaultFontFamily = 'Lato';
+  Chart.defaults.global.defaultFontSize = 18;
+  Chart.defaults.global.defaultFontColor = '#777';
+
+  let massPopChart = new Chart(myChart, {
+    type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    data:{
+      labels:y,
+      datasets:[{
+        label:'',
+        data:x,
+        //backgroundColor:'green',
+        backgroundColor:[
+          'rgba(255, 99, 132, 0)',
+        ],
+        borderWidth:1,
+        borderColor:'#777',
+        hoverBorderWidth:3,
+        hoverBorderColor:'#000',
+        pointRadius: 0.01
+      }]
+    },
+    options:{
+      title:{
+        display:true,
+        text:'Esboço do Grafico -1000 a 1000',
+        fontSize:25
+      },
+      legend:{
+        display:true,
+        position:'right',
+        labels:{
+          fontColor:'#000'
+        }
+      },
+      layout:{
+        padding:{
+          left:50,
+          right:0,
+          bottom:0,
+          top:0
+        }
+      },
+      tooltips:{
+        enabled:true
+      }
+    }
+  });
+}else{
+  let myChart1 = document.getElementById('myChart1').getContext('2d');
+
+  // Global Options
+  Chart.defaults.global.defaultFontFamily = 'Lato';
+  Chart.defaults.global.defaultFontSize = 18;
+  Chart.defaults.global.defaultFontColor = '#777';
+
+  let massPopChart = new Chart(myChart1, {
+    type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    data:{
+      labels:y,
+      datasets:[{
+        label:'',
+        data:x,
+        //backgroundColor:'green',
+        backgroundColor:[
+          'rgba(255, 99, 132, 0)',
+        ],
+        borderWidth:1,
+        borderColor:'#777',
+        hoverBorderWidth:3,
+        hoverBorderColor:'#000',
+        pointRadius: 0.01
+      }]
+    },
+    options:{
+      title:{
+        display:true,
+        text:'Esboço do Grafico -1000 a 1000',
+        fontSize:25
+      },
+      legend:{
+        display:true,
+        position:'right',
+        labels:{
+          fontColor:'#000'
+        }
+      },
+      layout:{
+        padding:{
+          left:50,
+          right:0,
+          bottom:0,
+          top:0
+        }
+      },
+      tooltips:{
+        enabled:true
+      }
+    }
+  });
+}
+numerodeGraficos = 0;
 };

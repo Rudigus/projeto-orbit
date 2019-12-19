@@ -4,11 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Orbit - Gráficos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
-  <script type="text/javascript" src="scripts/inputCalculadora.js" defer></script>
-  <script type="text/javascript" src="scripts/database.js" defer></script>
-  <script type="text/javascript" src="scripts/cabecalho.js" defer></script>
+  <script type="text/java" src="s/inputCalculadora.js" defer></script>
+  <script type="text/java" src="s/database.js" defer></script>
+  <script type="text/java" src="s/calculo.js" defer></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:700&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +21,6 @@
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
-
 
   <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -52,8 +55,12 @@
         </div>
         <br>
         <input id="inputCalculadora" type="text" name="" value="">
-        <button id="botaoCalcular" type="button" name="button">Calcular</button>
-
+        <button id="botaoCalcular2" type="button" name="button">Grafico1</button>
+        <button id="botaoCalcular1" type="button" name="button">Grafico2</button>
+        <div class="container">
+          <canvas id="myChart"></canvas>
+          <canvas id="myChart1"></canvas>
+        </div>
     </nav>
   </header>
 </body>

@@ -4,6 +4,7 @@
       "fisica": {
         "calor-latente": {
           "titulo" : "Calor Latente",
+          "url" : "https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/fisica-termologia-calor-latente.jpg",
           "formulaDireita": {
             "coeficiente": 1,
             "expoente": 1,
@@ -20,6 +21,7 @@
         },
         "energia-potencial-gravitacional": {
           "titulo" : "Energia Potencial Gravitacional",
+          "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0OyZFY2UBuAHGrJ6kEWfG2_IphSyY6KiWPVdMSskoE2dBE2K&s",
           "formulaDireita": {
             "coeficiente": 1,
             "expoente": 1,
@@ -37,6 +39,7 @@
         },
         "forca-peso": {
           "titulo" : "Força Peso",
+          "url" : "https://i.imgur.com/YJnfWeO.jpg",
           "formulaDireita": {
             "coeficiente": 1,
             "expoente": 1,
@@ -53,6 +56,7 @@
         },
         "funcao-horaria-deslocamento": {
           "titulo" : "Função Horária do Deslocamento",
+          "url" : "http://3.bp.blogspot.com/-skn4dvBRths/UX8K5AoyGmI/AAAAAAAAAB8/rTcreNcZsPY/s1600/mov+4.png",
           "formulaDireita": {
             "coeficiente": 1,
             "expoente": 1,
@@ -72,6 +76,7 @@
       "matematica": {
         "comprimento-circuferencia": {
           "titulo" : "Comprimento da Circunferência",
+          "url" : "https://i.imgur.com/kdUXGqg.jpg",
           "formulaDireita": {
             "coeficiente": 6.28,
             "expoente": 1,
@@ -85,6 +90,7 @@
         },
         "juros-simples": {
           "titulo" : "Juros Simples",
+          "url" : "https://exceleasy.com.br/wp-content/uploads/2017/09/Juros-simples-no-Excel.png",
           "formulaDireita": {
             "coeficiente": 1,
             "epoente": 1,
