@@ -5,7 +5,7 @@ class Monomio {
         this._coeficiente = _coeficiente; //atributo do tipo float
         this._incognitas = _incognitas; //atributo do tipo lista de strings
         this._expoenteIncognitas = _expoenteIncognitas; //atributo do tipo lista de floats
-        
+
     }
 }
 
@@ -34,7 +34,7 @@ function listasIguais(lista1, lista2) {
 //Essa função será responsável por somar os monomios iguais em apenas um lado da equação
 function somarMonomiosParte1(ListaAnalise){
     let a , b ;
-              
+
     for(a=0 ; a < ListaAnalise.length; a++){
         if(typeof ListaAnalise[a] !== "undefined"){
          //Até aqui será pego um monomio da lista de monomios de um dos lados da equação e verificado se ele existe
@@ -64,7 +64,7 @@ function somarMonomiosParte1(ListaAnalise){
 // Essa função é responsável por somar os monomios iguais dos dois lados da equação
 function somarMonomiosParte2(ListaAnalise1,ListaAnalise2){
     let a , b ;
-              
+
     for(a=0 ; a < ListaAnalise1.length; a++){
         if(typeof ListaAnalise1[a] !== "undefined"){
             //Até aqui se pega um monomio do lado esquerdo da equação e verifica-se se ele existe
@@ -96,16 +96,16 @@ function organizarPolinomio(ListaAnalise1,ListaAnalise2){
     let a , b , c, d;
     listaDefinitiva1 = [];
     listaDefinitiva2 = [];
-    
+
     //Neste comando será verificado cada um dos monomios do lado esquerdo da equação e visto se existe algum monomio sem incognita entre eles
     //se existir, seu coenficiente é trocado pois ele mudará de lado na equação e ele será adicionado para a listaDefinitiva2
     for(a=0 ; a < ListaAnalise1.length; a++){
         if(!ListaAnalise1[a]._incognitas.length){
             ListaAnalise1[a]._coeficiente = -ListaAnalise1[a]._coeficiente
-            listaDefinitiva2.push(ListaAnalise1[a]);    
+            listaDefinitiva2.push(ListaAnalise1[a]);
     }
         else{
-            listaDefinitiva1.push(ListaAnalise1[a]); 
+            listaDefinitiva1.push(ListaAnalise1[a]);
             //Se esse monomio escolhido tiver incognita, então ele é adicionado pra listaDefinitiva1
         }
 }
@@ -117,8 +117,8 @@ function organizarPolinomio(ListaAnalise1,ListaAnalise2){
             listaDefinitiva1.push(ListaAnalise2[b]);
         }
         else{
-            listaDefinitiva2.push(ListaAnalise2[b]); 
-            //Se esse monomio escolhido não tiver incognita, então ele é adicionado pra listaDefinitiva2 
+            listaDefinitiva2.push(ListaAnalise2[b]);
+            //Se esse monomio escolhido não tiver incognita, então ele é adicionado pra listaDefinitiva2
         }
     // Com as devidas listasDefinitvas preenchidas, esvaziaremos as listas dadas como parâmetros
     }
@@ -141,7 +141,7 @@ function organizarPolinomio(ListaAnalise1,ListaAnalise2){
 //Esse método serve apenas para um efeito estético de que o primeiro monomio da esquerda da equação não tenha um expoente negativo
 function organizarSinais(ListaAnalise1,ListaAnalise2){
     let a , b;
-    
+
     //Se o expoente do primeiro monomio da esquerda da equação tiver um coeficiente negativo,
     //todos os sinais dos coeficientes de ambos os lados da equação serão invertidos
     //que representaria basicamente multiplicar por -1 em ambos os lados
@@ -182,7 +182,7 @@ class Cabecalho{
         let alfabetoInverso = ["1/a","1/b","1/c","1/d","1/e","1/f","1/g","1/h","1/i","1/j","1/k","1/l","1/m","1/n",
                                "1/o","1/p","1/q","1/r","1/s","1/t","1/u","1/v","1/w","1/x","1/y","1/z"]
         let keyCount;
-         
+
         //primeiro escolhe-se um monomio da lista dada
         for(i = 0 ; i < ListaMonomio.length; i++){
              //Em seguida escolhe-se uma varíavel desse monomio
@@ -191,7 +191,7 @@ class Cabecalho{
                     //Aqui essa variável é comparada com as letras do alfabeto para ver qual é
                     if(alfabeto[l] == ListaMonomio[i]._incognitas[k]){
                         //Quando a letra for devidamente identificada o valor dela , dado pelo dicionário, é atribuida à variável valor
-                        // e , em seguida, a variável letra recebe esse valor elevado ao seu respectivo expoente e multiplicado a uma outra 
+                        // e , em seguida, a variável letra recebe esse valor elevado ao seu respectivo expoente e multiplicado a uma outra
                         //variável res que seria uma "simulação" do coeficiente
                         let valor = _dicionario[alfabeto[l]];
                         letra = Math.pow(valor,ListaMonomio[i]._expoenteIncognitas[k]);
@@ -233,7 +233,7 @@ class Cabecalho{
         let keyCount;
         let novaLista = [];
         let novaLista2 = [];
-        
+
         //Primeiro se é escolhido um monomio da lista dada no lado esquerdo da equação
         for(i = 0 ; i < this._formulaEsquerda.length; i++){
             let _variavelMonomio = [];
@@ -246,7 +246,7 @@ class Cabecalho{
                     //e se o valor dessa variável foi definido no dicionário ou não
                     if(alfabeto[l] == this._formulaEsquerda[i]._incognitas[k] &&  typeof _dicionario[alfabeto[l]] != 'undefined'){
                         //Nesta parte, o valor da variável foi definido no dicionário, logo este valor é atribuida à variável valor
-                        // e , em seguida, a variável letra recebe esse valor elevado ao seu respectivo expoente e multiplicado a uma outra 
+                        // e , em seguida, a variável letra recebe esse valor elevado ao seu respectivo expoente e multiplicado a uma outra
                         //variável res que seria uma "simulação" do coeficiente
                         let valor = _dicionario[alfabeto[l]];
                         letra = Math.pow(valor,this._formulaEsquerda[i]._expoenteIncognitas[k]);
@@ -259,7 +259,7 @@ class Cabecalho{
                          //monomio
                         _variavelMonomio.push(this._formulaEsquerda[i]._incognitas[k]);
                         _variavelExpoente.push(this._formulaEsquerda[i]._expoenteIncognitas[k]);
-                        
+
                     }
                 }
                 //O que foi realizado nos dois for's anteriores também será realizado nesse, mas agora para variáveis que dividem o monomio
@@ -269,7 +269,7 @@ class Cabecalho{
                         letra = Math.pow(valor,this._formulaEsquerda[i]._expoenteIncognitas[k]);
                         res = res*(letra);
 
-                    
+
                     }
                     if(alfabetoInverso[l] == this._formulaEsquerda[i]._incognitas[k] &&  typeof _dicionario[alfabetoInverso[l]] == "undefined" ){
                         _variavelMonomio.push(this._formulaEsquerda[i]._incognitas[k]);
@@ -289,7 +289,7 @@ class Cabecalho{
                 }
                 res = 1;
         }
- 
+
         //Essa outra metade do código tem a mesma lógica da primeira metade mais agora é para o lado direito da equação
         //e , consequentemente, para a outra lista formada
         for(i = 0 ; i < this._formulaDireita.length; i++){
@@ -319,7 +319,7 @@ class Cabecalho{
                        _variavelExpoente.push(this._formulaDireita[i]._expoenteIncognitas[k]);
                 }
                 }
-    
+
         }
                  res = Math.round(res*this._formulaDireita[i]._coeficiente*100)/100;
                  if(this._formulaDireita[i]._coeficiente != 0){
@@ -341,54 +341,54 @@ class Cabecalho{
 }
 
 
-let lista1 = ["x"];
-let lista3 = [1];
-
-let lista4 = ["1/y"];
-let lista6 = [1];
-
-let lista7 = ["z","1/z"];
-let lista9 = [2,1];
-
-let lista10 = ["z","1/z"];
-let lista12 = [2,1];
-
-let lista13 = ["V0"];
-let lista14 = [2];
-
-let lista15 = ["a","s"];
-let lista16 = [1,1];
-
-
-let dicionario ={"y":4,"1/y":1/4,"z":5,"1/z":1/5};
-let dicionario2 ={"y":4, "1/y":1/4};
-let dicionario4 ={"V0":5,"a":4,"1/a":1/4,"s":2};
-
-let Monomio1 = new Monomio(1/2,lista1,lista3);
-let Monomio2 = new Monomio(-4,lista4,lista6);
-let Monomio3 = new Monomio(5,lista7,lista9);
-let Monomio4 = new Monomio(Math.round(Math.sqrt(2)*100)/100);
-let Monomio5 = new Monomio(5,lista10,lista12);
-let Monomio6 = new Monomio(1,lista10,lista12);
-let Monomio7 = new Monomio(1,lista13,lista14);
-let Monomio8 = new Monomio(2,lista15,lista16);
-
-
-let ListaMonomio1 = [Monomio1];
-let ListaMonomio2 = [Monomio3,Monomio2];
-
-
-let Polinomio3 = new Polinomio(ListaMonomio1);
-let Polinomio4 = new Polinomio(ListaMonomio2);
-
-let exemplo1 = ["X^2-X-8=0", "X^2-4=0" , "3X^2-4X-7=0" , "5^(1\2)X^2-4X+3=0" , "1\2X^2+3\4X+3^(3\2)"];
-
-let passos1 = ["1°passo: identificar quem são a , b  e c , observando na fórmula da equação do 2° grau que a é o coeficiente de x^2 , b é o coeficiente de x e c é o coeficiente sem incógnita."
-              ,"2° passo: utilizar a fórmula de bhaskara, substituindo a, b, e c em suas devidas posições."];
-
-let Cabecalho1 = new Cabecalho("Equações do 2º Grau","Matemática","x = (-b±sqrt(b^2-4ac)/2a ", exemplo1, passos1 ,"f(x) = a*x**2 + b*x + c");
-
-let Cabecalho2 = new Cabecalho(" Equação de Torricelli","Física","",ListaMonomio1,ListaMonomio2,"","");
-
-Cabecalho2.aplicarValorParcial();
-
+// let lista1 = ["x"];
+// let lista3 = [1];
+//
+// let lista4 = ["1/y"];
+// let lista6 = [1];
+//
+// let lista7 = ["z","1/z"];
+// let lista9 = [2,1];
+//
+// let lista10 = ["z","1/z"];
+// let lista12 = [2,1];
+//
+// let lista13 = ["V0"];
+// let lista14 = [2];
+//
+// let lista15 = ["a","s"];
+// let lista16 = [1,1];
+//
+//
+// let dicionario ={"y":4,"1/y":1/4,"z":5,"1/z":1/5};
+// let dicionario2 ={"y":4, "1/y":1/4};
+// let dicionario4 ={"V0":5,"a":4,"1/a":1/4,"s":2};
+//
+// let Monomio1 = new Monomio(1/2,lista1,lista3);
+// let Monomio2 = new Monomio(-4,lista4,lista6);
+// let Monomio3 = new Monomio(5,lista7,lista9);
+// let Monomio4 = new Monomio(Math.round(Math.sqrt(2)*100)/100);
+// let Monomio5 = new Monomio(5,lista10,lista12);
+// let Monomio6 = new Monomio(1,lista10,lista12);
+// let Monomio7 = new Monomio(1,lista13,lista14);
+// let Monomio8 = new Monomio(2,lista15,lista16);
+//
+//
+// let ListaMonomio1 = [Monomio1];
+// let ListaMonomio2 = [Monomio3,Monomio2];
+//
+//
+// let Polinomio3 = new Polinomio(ListaMonomio1);
+// let Polinomio4 = new Polinomio(ListaMonomio2);
+//
+// let exemplo1 = ["X^2-X-8=0", "X^2-4=0" , "3X^2-4X-7=0" , "5^(1\2)X^2-4X+3=0" , "1\2X^2+3\4X+3^(3\2)"];
+//
+// let passos1 = ["1°passo: identificar quem são a , b  e c , observando na fórmula da equação do 2° grau que a é o coeficiente de x^2 , b é o coeficiente de x e c é o coeficiente sem incógnita."
+//               ,"2° passo: utilizar a fórmula de bhaskara, substituindo a, b, e c em suas devidas posições."];
+//
+// let Cabecalho1 = new Cabecalho("Equações do 2º Grau","Matemática","x = (-b±sqrt(b^2-4ac)/2a ", exemplo1, passos1 ,"f(x) = a*x**2 + b*x + c");
+//
+// let Cabecalho2 = new Cabecalho(" Equação de Torricelli","Física","",ListaMonomio1,ListaMonomio2,"","");
+//
+// Cabecalho2.aplicarValorParcial();
+//
