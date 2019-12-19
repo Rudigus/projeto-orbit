@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>Orbit - Página Inicial</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
   <script type="text/javascript" src="scripts/inputCalculadora.js" defer></script>
   <script type="text/javascript" src="scripts/database.js" defer></script>
   <script type="text/javascript" src="scripts/cabecalho.js" defer></script>
@@ -28,7 +27,7 @@
             <img border="0" alt="Orbit" src="button-icons/logoOrbit01.svg">
           </a>
         </p>
-        <br> 
+        <br>
         <a class="a1 navlinks" href="graficos.html">Gráficos </a>
         <a class="a1 navlinks" href="propriedadesaritmeticas.html">Propriedades Aritméticas </a>
         <a class="a1 navlinks" href="formulas.html">Fórmulas </a>
@@ -50,7 +49,7 @@
           <p>Termometria</p>
           <p>MUV</p>
         </div>
-        <br><br> <br> 
+        <br><br> <br>
         <div id="botoesAuxiliares">
           <button class="botaoAuxiliar" id="radiciacao" type="button" name="button">
             <img src="button-icons/raizEnesima.svg" />
@@ -65,12 +64,13 @@
           <button class="botaoAuxiliar" id="cosseno" type="button" name="button">
             <img src="button-icons/cosseno.svg" /> </button>
         </div>
-        <br>
-        <input id="inputCalculadora" type="text" name="" value="">
-        <button id="botaoCalcular" type="button" name="button">Calcular</button>
-        <br><br>
+      </div>
+      <br>
+      <input id="inputCalculadora" type="text" name="" value="">
+      <button id="botaoCalcular" type="button" name="button">Calcular</button>
+      <br><br>
+      <div class="output">
         <div class="parte-esquerda">
-          <!--<div class="formula">-->
           <p>
             &nbsp; &nbsp; Fórmula:
           </p>
@@ -81,9 +81,6 @@
             </ul>
           </p>
         </div>
-        <!--</div>
-        <br>
-        <div class="exemplos">-->
         <div class="parte-direita">
           <p>
             &nbsp; &nbsp; Exemplos:
@@ -98,7 +95,7 @@
           </p>
         </div>
         <div class="resultados">
-          <p>
+          <!-- <p>
             &nbsp; &nbsp; Solução:
           </p>
           <p>
@@ -107,13 +104,14 @@
               <li>Passo 2</li>
               <li>Passo N</li>
             </ol>
-          </p>
+          </p> -->
 
           <p>
             &nbsp; &nbsp; Resultado(s):
           </p>
+        </div>
+      </div>
     </main>
-  </div>
 </body>
 
 </html>
