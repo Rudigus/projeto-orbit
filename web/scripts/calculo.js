@@ -1,5 +1,3 @@
-console.log("oi");
-
 var truee = false;
 var botaoCalcular = document.getElementById("botaoCalcular");
 var botaoCalcular2 = document.getElementById("botaoCalcular2");
