@@ -11,9 +11,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="48.232471mm"
-   height="23.059675mm"
-   viewBox="0 0 48.232471 23.059675"
+   width="48.431953mm"
+   height="23.819767mm"
+   viewBox="0 0 48.431953 23.819767"
    version="1.1"
    id="svg8"
    sodipodi:docname="logoOrbit01.svg"
@@ -74,8 +74,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4"
-     inkscape:cx="-32.798714"
-     inkscape:cy="21.540268"
+     inkscape:cx="-32.044766"
+     inkscape:cy="22.976657"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -101,7 +101,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-38.259862,-117.41634)">
+     transform="translate(-38.06038,-117.03629)">
     <ellipse
        id="path3847"
        style="fill:#dddddd;fill-opacity:1;stroke:#000046;stroke-width:0.78999043;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -115,11 +115,11 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     transform="translate(-38.259862,-117.41634)">
+     transform="translate(-38.06038,-117.03629)">
     <!-- 2.9222149-->
     <ellipse
        id="path3847-6"
-       style="opacity:1;fill:#dddddd;fill-opacity:0;stroke:#000046;stroke-width:2.37228474;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#dddddd;fill-opacity:0;stroke:#000046;stroke-width:2.37228465;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        cx="-70.626587"
        cy="77.414894"
        rx="3.0139353"
@@ -127,7 +127,7 @@
        transform="matrix(0.04670126,-0.9989089,0.65649138,0.75433353,0,0)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.18036556px;line-height:1.25;font-family:'Poiret One';-inkscape-font-specification:'Poiret One';letter-spacing:0px;word-spacing:0px;fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.18036556px;line-height:1.25;font-family:'Poiret One';-inkscape-font-specification:'Poiret One';letter-spacing:0px;word-spacing:0px;fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        x="55.366714"
        y="145.05379"
        id="text4826"
@@ -136,7 +136,7 @@
          id="tspan4824"
          x="55.366714"
          y="145.05379"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.06575584px;font-family:'Poiret One';-inkscape-font-specification:'Poiret One';fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">rbit</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.06575584px;font-family:'Poiret One';-inkscape-font-specification:'Poiret One';fill:#000046;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">rbit</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
