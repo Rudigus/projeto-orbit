@@ -6,9 +6,11 @@
  
  No final, tivemos alguns problemas com integração de código e firebase, portanto não ficou completo como queríamos, mas, de certa forma, é funcional. Abra o console e verá a mágica acontecer.
  
+ ## Página Inicial
+ 
  ![Página Inicial do Orbit](presentation/orbit_homepage.jpeg)
  
- Membros da equipe:
+ ## Membros da equipe:
  
  [Guten do Berg](https://github.com/Gutemberg370)
  
@@ -18,6 +20,6 @@
  
  [Matheus Asiatico](https://github.com/matheusb432)
 
- Orientador:
+ ## Orientador:
 
  [Álisson](https://github.com/alissongl1)
