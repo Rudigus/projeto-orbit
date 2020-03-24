@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Projeto Orbit</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1><a href="#">Projeto Orbit</a></h1>
-    <h2><a href="matematica.html">Matemática</a></h2>
-    <h2>Física</h2>
-    <h2>Química</h2>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Orbit - Gráficos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="scripts/inputCalculadora.js" defer></script>
+  <script src="scripts/database.js" defer></script>
+  <script src="scripts/classes.js" defer></script>
+  <script src="scripts/calculo.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+  <header>
+    <nav>
+      <p>
+        <a class="a0" href="index.html">
+          <img border="0" alt="Orbit" src="button-icons/logoOrbit000.svg">
+        </a>
+      </p>
+      <a class="a1 navlinks" style="color: rgb(0, 0, 85);" href="graficos.html">Gráficos </a>
+      <a class="a1 navlinks" href="propriedadesaritmeticas.html">Propriedades Aritméticas </a>
+      <a class="a1 navlinks" href="formulas.html">Fórmulas </a>
+      <a class="a1 navlinks" href="login.html">Login</a>
+      <br><br>
+      <div class="nav-bar">
+        <h1 style="font-family: 'Montserrat';">Calculadora de Gráficos</h1>
+        <div id="botoesAuxiliares" style="margin-top:50px;">
+          <button class="botaoAuxiliar" id="radiciacao" type="button" name="button">
+            <img src="button-icons/raizEnesima.svg" />
+          </button>
+          <button class="botaoAuxiliar" id="potenciacao" type="button" name="button">
+            <img src="button-icons/xAoEnesimo.svg" />
+          </button>
+          <button class="botaoAuxiliar" id="divisao" type="button" name="button">
+            <img src="button-icons/fracao.svg" /> </button>
+          <button class="botaoAuxiliar" id="seno" type="button" name="button">
+            <img src="button-icons/seno.svg" /> </button>
+          <button class="botaoAuxiliar" id="cosseno" type="button" name="button">
+            <img src="button-icons/cosseno.svg" /> </button>
+        </div>
+        <br>
+        <input id="inputCalculadora" type="text" name="" value="">
+        <button id="botaoCalcular" type="button" name="button">Grafico1</button>
+        <button id="botaoCalcular1" type="button" name="button">Grafico2</button>
+        <div class="container">
+          <canvas id="myChart"></canvas>
+          <canvas id="myChart1"></canvas>
+        </div>
+    </nav>
+  </header>
+</body>
+
 </html>

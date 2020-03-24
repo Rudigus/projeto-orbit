@@ -1,0 +1,144 @@
+{
+  "cabecalhos": {
+    "materia": {
+      "fisica": {
+        "calor-latente": {
+          "titulo" : "Calor Latente",
+          "url" : "https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/fisica-termologia-calor-latente.jpg",
+          "formulaDireita": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": {
+              "calorTroca": "L",
+              "massa": "m"
+            }
+          },
+          "formulaEsquerda": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": "Q"
+          }
+        },
+        "energia-potencial-gravitacional": {
+          "titulo" : "Energia Potencial Gravitacional",
+          "url" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0OyZFY2UBuAHGrJ6kEWfG2_IphSyY6KiWPVdMSskoE2dBE2K&s",
+          "formulaDireita": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": {
+              "altura": "h",
+              "gravidade": "g",
+              "massa": "m"
+            }
+          },
+          "formulaEsquerda": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": "Epg"
+          }
+        },
+        "forca-peso": {
+          "titulo" : "Força Peso",
+          "url" : "https://i.imgur.com/YJnfWeO.jpg",
+          "formulaDireita": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": {
+              "gravidade": "g",
+              "massa": "m"
+            }
+          },
+          "formulaEsquerda": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": "p"
+          }
+        },
+        "funcao-horaria-deslocamento": {
+          "titulo" : "Função Horária do Deslocamento",
+          "url" : "http://3.bp.blogspot.com/-skn4dvBRths/UX8K5AoyGmI/AAAAAAAAAB8/rTcreNcZsPY/s1600/mov+4.png",
+          "formulaDireita": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": {
+              "posicaoInicial": "S0",
+              "variacaoTempo": "T",
+              "velocidade": "v"
+            }
+          },
+          "formulaEsquerda": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": "S"
+          }
+        }
+      },
+      "matematica": {
+        "comprimento-circuferencia": {
+          "titulo" : "Comprimento da Circunferência",
+          "url" : "https://i.imgur.com/kdUXGqg.jpg",
+          "formulaDireita": {
+            "coeficiente": 6.28,
+            "expoente": 1,
+            "incognita": "r"
+          },
+          "formulaEsquerda": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "icognitas": "c"
+          }
+        },
+        "juros-simples": {
+          "titulo" : "Juros Simples",
+          "url" : "https://exceleasy.com.br/wp-content/uploads/2017/09/Juros-simples-no-Excel.png",
+          "formulaDireita": {
+            "coeficiente": 1,
+            "epoente": 1,
+            "incognita": {
+              "captial": "C",
+              "taxa": "i",
+              "tempo": "t"
+            }
+          },
+          "formulaEsquerda": {
+            "coeficiente": 1,
+            "expoente": 1,
+            "incognita": "J"
+          }
+        }
+      }
+    }
+  },
+  "propriedades": {
+    "operacoes-aritmeticas": {
+      "adicao": {
+        "comutatividade": {
+          "descricao": "A ordem das parcelas não altera a soma.",
+          "titulo": "Comutatividade"
+        }
+      },
+      "multiplicacao": {
+        "associativa": {
+          "descricao": "Ao multiplicarmos três fatores ou mais, é possível adotar ordens distintas para resolução da operação de multiplicar sem que o resultado seja alterado.",
+          "titulo": "Associativa"
+        },
+        "comutativa": {
+          "descricao": "Semelhante a associativa, a propriedade comutativa confirma que em um cálculo de multiplicar a disposição dos fatores não altera o produto da multiplicação. Em rápidas palavras, você pode escolher a ordem em que irá multiplicar dois, três, quatro, cinco números ou mais que isso não irá interferir no resultado da conta.",
+          "titulo": "Comutativa"
+        },
+        "distributiva": {
+          "descricao": "A multiplicação de um fator por uma soma ou subtração, pode ser feita distribuindo o fator por cada um dos termos e depois realizar a adição ou subtração entre os resultados. O produto final será o mesmo.",
+          "titulo": "Distributiva"
+        },
+        "elemento-neutro": {
+          "descricao": "Esta propriedade garante que um número qualquer, ao ser multiplicado pelo elemento neutro, não será alterado. Bom, você já deve saber qual é esse elemento neutro, não é? Estamos falando do numeral 1. Este é o elemento neutro da multiplicação.",
+          "titulo": "Elemento Neutro"
+        },
+        "elemento-nulo": {
+          "descricao": "Por fim, a propriedade do elemento nulo confirma que qualquer multiplicação entre um número e o elemento nulo irá resultar sempre em zero. Então qual é mesmo o elemento nulo? Zero.",
+          "titulo": "Elemento Nulo"
+        }
+      }
+    }
+  }
+}
