@@ -10,7 +10,7 @@
  
  ![Página Inicial do Orbit](presentation/orbit_homepage.jpeg)
  
- ## Membros da equipe:
+ ### Membros da equipe
  
  [Guten do Berg](https://github.com/Gutemberg370)
  
@@ -20,6 +20,6 @@
  
  [Matheus Asiatico](https://github.com/matheusb432)
 
- ## Orientador:
+ ### Orientador
 
  [Álisson](https://github.com/alissongl1)
