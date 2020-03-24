@@ -15,3 +15,7 @@
  [Magnus](https://github.com/MagnoCarta)
  
  [Matheus Asiatico](https://github.com/matheusb432)
+
+Orientador:
+
+[Álisson](https://github.com/alissongl1)
