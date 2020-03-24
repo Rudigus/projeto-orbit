@@ -7,6 +7,9 @@
  Membros da equipe:
  
  [Guten do Berg](https://github.com/Gutemberg370)
+ 
  [Luan Futebolista](https://github.com/jose-luan19)
+ 
  [Magnus](https://github.com/MagnoCarta)
+ 
  [Matheus Asiatico](https://github.com/matheusb432)
